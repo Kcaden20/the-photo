@@ -1,0 +1,179 @@
+:root {
+    --sm-pad: 2vw
+}
+
+@font-face {
+    font-family: 'avarabold';
+    src: url('assets/font/avara-webfont.woff2') format('woff2'),
+         url('assets/font/avara-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    overflow-x: hidden;
+
+}
+
+body {
+    background-color:#ffe254;
+    width: 100vw;
+    margin: 0;
+    
+}
+.f-grad {
+    height: 50px;
+    width: 100%;
+    background-image: linear-gradient(#ffe254, black);
+}
+
+.f-grad:last-of-type {
+ background-image: linear-gradient(black,#ffe254);
+}
+
+.full-height {
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+}
+
+.full-height h1,.half-height h1 {
+    margin-top: calc(50vh - 48px)
+}
+
+.half-height {
+    height: 50vh
+}
+
+main {
+    background-color: black;
+    height: 100%;
+    padding: var(--sm-pad);
+}
+
+h1, h2, h3 {
+    font-family: 'avarabold';
+    text-align: center;
+    color: #ffe254;
+    margin-top: 0;
+    cursor: default
+}
+
+details {
+    cursor: pointer
+}
+
+h1  {
+    font-size: 2em;
+}
+
+audio {
+    margin-bottom: 1.5em;
+}
+
+p {
+    font-family: sans-serif;
+    color: #ffe254
+}
+
+
+main section article {
+    border-radius: 10px;
+}
+
+main section article:first-of-type {
+    height: calc(75vh - var(--sm-pad));
+    margin-bottom: var(--sm-pad)
+}
+
+
+main section article picture {
+    display: inline-block;
+    width: 47%;
+    height: 100%;
+    /* background-color: #ffe254;  */
+    /* overflow: hidden; */
+    position: relative;
+}
+
+
+.full {
+    width: calc(100vw - calc(var(--sm-pad) * 2)); 
+}
+main section picture:nth-of-type(2) {
+    margin-left: 3vw;
+}
+
+main section article audio {
+    width: 100%;
+}
+
+article picture img {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-box-shadow: 0px 0px 15px 0px rgb(255, 226, 84);
+    -moz-box-shadow: 0px 0px 15px 0px rgb(255, 226, 84);
+    box-shadow: 0px 0px 15px 0px rgb(255, 226, 84);
+}
+
+/* img:hover {
+    opacity: .5;
+} */
+
+hr {
+    margin: 10% 0;
+}
+
+summary {
+    color: #ffe254;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.credits {
+    margin-top: 3em;
+}
+.credits h1, .credits h1 a {
+    text-align: center;
+    color: #ffe254
+}
+
+.credits a:visited {
+    color: #ffe254;
+  }
+hr {
+    overflow: visible; /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: #ffe254;
+    border-width: 3px 0 0 0;
+    border-radius: 20px;
+}
+hr:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -33px;
+    border-style: solid;
+    border-color: #ffe254;
+    border-width: 0 0 3px 0;
+    border-radius: 20px;
+}
+
+.curs-no {
+    cursor: not-allowed;
+}
+
+.curs-ew {
+    cursor: ew-resize;
+}
+
+.curs-progress {
+    cursor: progress;
+}
+
+.curs-reach{
+    cursor: grab;
+}
